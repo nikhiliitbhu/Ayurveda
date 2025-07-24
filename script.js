@@ -61,7 +61,6 @@ const questions = Array.from({length: 15}, (_, i) => ({
       visited: false
     }));
 
-    console.log(questions);
     let currentQuestionIndex = 0;
 
     function startTest() {
@@ -83,13 +82,13 @@ const questions = Array.from({length: 15}, (_, i) => ({
       q.options.forEach((opt, idx) => {
         const div = document.createElement("div");
         div.className = "option";
-        if (q.selected === opt) div.classList.add("selected");
+        if (q.selected === idx) div.classList.add("selected");
         div.innerHTML = `<img src="${q.images[idx]}" alt="${opt}" /><div>${opt}</div>`;
         div.onclick = () => {
-          if (q.selected === opt) {
+          if (q.selected === idx) {
             q.selected = null;
           } else {
-            q.selected = opt;
+            q.selected = idx;
           }
           loadQuestion();
           renderSidebar();
@@ -107,6 +106,7 @@ const questions = Array.from({length: 15}, (_, i) => ({
         btn.textContent = `Question ${i + 1}`;
         btn.className = "question-button";
         if (i === currentQuestionIndex) btn.classList.add("current-question");
+        else if(q.selected == 0) btn.classList.add("answered");
         else if (!q.visited) btn.classList.add("not-visited");
         else if (q.visited && !q.selected) btn.classList.add("visited-not-answered");
         else if (q.selected) btn.classList.add("answered");
@@ -148,13 +148,15 @@ const questions = Array.from({length: 15}, (_, i) => ({
         return;
       }
 
+      console.log(questions);
+
        if( confirm("Do you wish to submit the Quiz?")){
 
       let countA = 0, countB = 0, countC = 0;
       questions.forEach(q => {
-        if (q.selected === 'A') countA++;
-        else if (q.selected === 'B') countB++;
-        else if (q.selected === 'C') countC++;
+        if (q.selected === 0) countA++;
+        else if (q.selected === 1) countB++;
+        else if (q.selected === 2) countC++;
       });
 
       document.getElementById("testPage").style.display = "none";
