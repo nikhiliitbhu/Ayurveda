@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mock Test Exam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="home-page" id="homePage">
+    <h1>Welcome to the Mock Test</h1>
+    <input type="text" id="username" placeholder="Enter your name" required />
+    <button onclick="startTest()">Start Test</button>
+  </div>
+
+    <div class="test-page" id="testPage">
+        <div class="test-container">
+        <div class="sidebar" id="sidebar">
+            <div class="legend">
+            <div><span style="background:gray"></span>Not Visited</div>
+            <div><span style="background:red"></span>Visited, Not Answered</div>
+            <div><span style="background:green"></span>Answered</div>
+            <div><span style="background:yellow"></span>Current Question</div>
+            </div>
+            <div id="questionButtons"></div>
+        </div>
+        <div class="question-area">
+            <div class="question-text" id="questionText"></div>
+            <div class="options-container" id="optionsContainer"></div>
+            <div class="navigation-buttons">
+            <button onclick="prevQuestion()">Previous</button>
+            <button onclick="nextQuestion()">Next</button>
+            <button onclick="submitTest()">Submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+  <div class="result-page" id="resultPage">
+    <h2>Test Submitted!</h2>
+    <p id="resultSummary"></p>
+  </div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
