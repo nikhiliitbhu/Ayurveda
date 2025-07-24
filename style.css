@@ -31,7 +31,7 @@
 
     .test-container {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     .sidebar {
@@ -198,3 +198,9 @@
         width: 80%;
       }
     }
+
+    .question-text {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
