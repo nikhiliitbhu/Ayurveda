@@ -53,6 +53,137 @@ const images = [
     ['images/Q15/A.png', 'images/Q15/B.png', 'images/Q15/C.png']
 ];
 
+
+const vata = `<div class="vata">
+    <h2>Vata Dosha</h2>
+    <h4>Strengths</h4>
+    <ul>
+      <li> Vata is the energy of wind and space and just like the wind you are full of movement, lightness and change.</li>
+      <li> Just like the wind cools wherever it lands on and rises wherever it touches similarly your nature to is cool and dry.</li>
+      <li>Vata is the energy of wind and space and just like the wind you are full of movement, lightness and change.</li>
+      <li>Just like the wind cools wherever it lands on and rises wherever it touches similarly your nature to is cool and dry.</li>
+      <li> Your body being light is also very quick and agile.</li>
+      <li>You move fast, you speak fast. Sometimes even faster than the world can keep up. And it's not just your body, your mind also. Things happen fast. That's why it's so easy for you to learn something very Quickly</li>
+      <li>You can shift from one idea to the next. Effortlessly. Which makes you quite able. You can thrive in new environments, new roles, new situations. Among all the three body types.</li>
+      <li>What are also the most drawn toward higher states of awareness, to spirituality, philosophy, and deep introspection.</li>
+    </ul>
+
+    <h4>Weaknesses</h4>
+    <ul>
+      <li>You easily feel cold, and your skin gets dry if you don't take care of it.</li>
+      <li>Sometimes mentally agile for others to understand you.</li>
+      <li>money, you don't usually hold on. You love spending it as fast as you earn it.</li>
+      <li>Physically, you may become overly thin, struggling to gain weight.</li>
+      <li> No Matter what you do. Mentally your mind can start racing too much. Hopping from one thought to the other. Erratic indecisive, changing quickly. You may become fizzy, even restless, unable to sit still.</li>
+    </ul>
+
+    <h4>Does</h4>
+    <ul>
+      <li>To keep your Vata in control, you need elements opposite of yours, which are Water and Earth and these are grounding and nourishing.</li>
+      <li>Your best friend is snehana. Which means oiling both inside and outside.
+        <ul>
+          <li> Outside by regularly oiling your self through self massage. </li>
+          <li> Inside by eating foods which naturally have more oil in them. Like nuts and fats. </li>
+        </ul>
+      </li>
+      <li> And You need food that is grounding lubricating and slightly Intense and heavy.
+        <ul>
+          <li> Vegetables like pumpkin, sweet potatoes.</li>
+        </ul>
+      </li>
+      <li>Yoga is the best recreation for you. Slow and Steady Exercises.</li>
+    </ul>
+
+    <h4>Donts</h4>
+    <ul>
+    <li>If you only eat light salads and dry snacks it will only aggravate your weight further.</li>
+    <li> When it comes to movement avoid super intense cardio.  And Instead choose yoga slow strength training practices that help you build.</li>
+      </ul>
+  </div>`;
+
+  
+  const pitta = `<div class="pitta">
+    <h2>Pitta Dosha</h2>
+      <h4>Strengths</h4>
+      <ul>
+        <li>The fire cracker, the go getter, the born leader.</li>
+        <li>Just like fire, you are intensely hot. And almost impossible to ignore.</li>
+        <li>The planner, the achiever, the one who doesn't just dream but who transforms those dreams into reality.</li>
+        <li>You try to have structure, you love to do lists, deadlines. You love to lead.</li>
+        <li>And good enough. That's not in your dictionary. You chase perfection. Sometimes a little too hard.</li>
+      </ul>
+
+    <h4>Weaknesses</h4>
+      <ul>
+        <li>You must control your fire, which if not balanced:
+          <ul>
+            <li> Physically you may start feeling acidity, rashes, acne on your skin, even have high blood pressure.</li>
+            <li> Mentally you may find yourself snapping at people in anger losing patience over small things wanting to control and dominate everyone around you even your inner voice skin turns harsh becoming overly critical of yourself and of others.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h4>Does</h4>
+      <ul>
+        <li>Your best friend is the cool. To keep the inner fire in check.</li>
+        <li> You need to load up on foods and drinks that are cooling in nature. That are hydrating in nature.
+          <ul>
+            <li>Like melons, apples, beets, coconut cherries</li>
+            <li> like cooling vegetables such as cucumbers, ash gourd, rich gourd.</li>
+            <li>sip on coconut water.</li>
+          </ul>
+        </li>
+        <li>And if you want to have teas make them feel cooling Herbs like mint, fennel, rose petals.</li>
+      </ul>
+      
+      <h4>Donts</h4>
+      <ul>
+        <li> Ironically, what you will crave the most, will be spicy food. With lots of masala, which will completely put your pitta out of balance.
+          <ul>
+            <li>No Spicy Curries,  spicy masalas, oily foods, pickles.</li>
+            <li> Too many nuts which are all in nature you should Reduce as far as possible.</li>
+          </ul>
+        </li>
+      </ul>
+
+      </div>`;
+
+      const kapha = `<div class="kapha">
+        <h2>Kapha Dosha</h2>
+
+        <h4>Strengths</h4>
+        <ul>
+          <li> You are like the earth. Stable, calm, deeply grounded.</li>
+          <li>Physically, you are likely to have a strong, well-built frame, big expressiveness, thick lashes, lust, beautiful hair.</li>
+          <li> You radiate a certain softness. A warmth which makes people around you feel very safe.</li>
+          <li>You might think a lot before starting something new. But when you commit you go all in. And you make sure it's done.</li>
+          <li>Doing things slightly slow. But very slowly is actually a superpower. In a world that's always racing you. Rarely make impulsive decisions. You really think everything through.</li>
+          <li> You have the memory of an elephant. Once you learn something you remember it for a long time unlike a person who learns fast and forgets fast.</li>
+        </ul>
+
+        <h4>Weaknesses</h4>
+        <ul>
+          <li> If your Kapha increases too much. You gain weight too fast.</li>
+          <li>Your digestion becomes slow and sluggish.</li>
+          <li> And after meals you feel like sinking into a comfortable sofa.</li>
+        </ul>
+
+        <h4>Does</h4>
+        <ul>
+          <li>The most important advice for you is don't get stuck in stillness. Neither physically nor mentally. Movement is your best medicine.</li>
+          <li>Really heavy exercises.</li>
+          <li>Eat Fruits like pineapple, papaya, apples, oranges, berries</li>
+          <li>Consume  water rich vegetables like bottle gourd, rich gourds, zucchini over sweet dense ones.</li>
+          <li> Unlike for pittas, spices are actually good for you. They help cut the kapha. So you can generally use spices like, ginger, black pepper, turmeric, mustard seeds, cinnamon, cardamom, cloves, green chillies and pepper in your meals.</li>
+        </ul>
+
+        <h4>Donts</h4>
+        <ul>
+          <li>Simple stretches will not cut it for you. You need intensity. You need to squat. You need to run, jump, dance, sprint, whatever gets your heart pumping faster. Among all the body types you need activity the most.</li>
+          <li> Also you will be the most drawn to heavy dense comfort foods, chocolates, pastries, nuts, butter, cheese, rich grain based dishes. But those are your worst Enemies.</li>
+        </ul>
+      </div>`
+
 const questions = Array.from({length: 15}, (_, i) => ({
       text: (i+1) + ". " + questionPaper[i],
       options: options[i],
@@ -148,8 +279,6 @@ const questions = Array.from({length: 15}, (_, i) => ({
         return;
       }
 
-      console.log(questions);
-
        if( confirm("Do you wish to submit the Quiz?")){
 
       let countA = 0, countB = 0, countC = 0;
@@ -161,8 +290,9 @@ const questions = Array.from({length: 15}, (_, i) => ({
 
       document.getElementById("testPage").style.display = "none";
       document.getElementById("resultPage").style.display = "block";
-      document.getElementById("resultSummary").textContent = `You selected:
-        A: ${countA}, B: ${countB}, C: ${countC}`;
+      
+      
+
     } else{
         return;
     }
