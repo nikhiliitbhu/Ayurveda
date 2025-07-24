@@ -324,16 +324,16 @@ const questions = Array.from({length: 15}, (_, i) => ({
         }
         else if(countA == 5 && countB == 5 && countC == 5){
           resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have all the tridoshas in equal quantities, This is really really rate. <br> Take the quiz again if you wish.`;
-          resultPage.innerHTML += vata + pitta + kapha;
+          resultPage.innerHTML += `<div style='display: flex; gap: 1rem;'> ${vata + pitta + kapha} </div>`;
         } else if(countA == countB){
             resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have equal Vata and Pitta Dosh(${Math.round(countA*100/(countA+countB+countC))}% each)`;
-          resultPage.innerHTML += vata + pitta;
+          resultPage.innerHTML += `<div style='display: flex; gap: 1rem;'> ${vata + pitta } </div>`;
         } else if(countB == countC){
             resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have equal Pitta and Kapha Dosh(${Math.round(countB*100/(countA+countB+countC))}% each)`;
-          resultPage.innerHTML +=  pitta + kapha;
+          resultPage.innerHTML +=  `<div style='display: flex; gap: 1rem;'> ${pitta + kapha} </div>`;
         } else if(countA == countC){
                resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have equal Vata and Kapha Dosh(${Math.round(countA*100/(countA+countB+countC))}% each)`;
-          resultPage.innerHTML += vata + pitta ;
+          resultPage.innerHTML += `<div style='display: flex; gap: 1rem;'> ${vata + kapha} </div>` ;
         } else {
           switch(largest){
             case 'A': 
