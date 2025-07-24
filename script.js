@@ -102,51 +102,54 @@ const vata = `<div class="vata">
   </div>`;
 
   
-  const pitta = `<div class="pitta">
-    <h2>Pitta Dosha</h2>
-      <h4>Strengths</h4>
-      <ul>
-        <li>The fire cracker, the go getter, the born leader.</li>
-        <li>Just like fire, you are intensely hot. And almost impossible to ignore.</li>
-        <li>The planner, the achiever, the one who doesn't just dream but who transforms those dreams into reality.</li>
-        <li>You try to have structure, you love to do lists, deadlines. You love to lead.</li>
-        <li>And good enough. That's not in your dictionary. You chase perfection. Sometimes a little too hard.</li>
-      </ul>
+  const pitta = `
+  <div class="pitta" style="max-width: 700px; margin: 20px auto; background-color: #fff7f0; border: 2px solid #f5c49c; border-radius: 12px; padding: 24px; font-family: 'Segoe UI', sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); color: #4b2e1e;">
+    <h2 style="color: #d35400; text-align: center; margin-bottom: 20px;">Pitta Dosha</h2>
 
-    <h4>Weaknesses</h4>
-      <ul>
-        <li>You must control your fire, which if not balanced:
-          <ul>
-            <li> Physically you may start feeling acidity, rashes, acne on your skin, even have high blood pressure.</li>
-            <li> Mentally you may find yourself snapping at people in anger losing patience over small things wanting to control and dominate everyone around you even your inner voice skin turns harsh becoming overly critical of yourself and of others.</li>
-          </ul>
-        </li>
-      </ul>
+    <h4 style="color: #c0392b; margin-top: 20px;">Strengths</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>The fire cracker, the go getter, the born leader.</li>
+      <li>Just like fire, you are intensely hot. And almost impossible to ignore.</li>
+      <li>The planner, the achiever, the one who doesn't just dream but who transforms those dreams into reality.</li>
+      <li>You try to have structure, you love to do lists, deadlines. You love to lead.</li>
+      <li>And good enough. That's not in your dictionary. You chase perfection. Sometimes a little too hard.</li>
+    </ul>
 
-      <h4>Does</h4>
-      <ul>
-        <li>Your best friend is the cool. To keep the inner fire in check.</li>
-        <li> You need to load up on foods and drinks that are cooling in nature. That are hydrating in nature.
-          <ul>
-            <li>Like melons, apples, beets, coconut cherries</li>
-            <li> like cooling vegetables such as cucumbers, ash gourd, rich gourd.</li>
-            <li>sip on coconut water.</li>
-          </ul>
-        </li>
-        <li>And if you want to have teas make them feel cooling Herbs like mint, fennel, rose petals.</li>
-      </ul>
-      
-      <h4>Donts</h4>
-      <ul>
-        <li> Ironically, what you will crave the most, will be spicy food. With lots of masala, which will completely put your pitta out of balance.
-          <ul>
-            <li>No Spicy Curries,  spicy masalas, oily foods, pickles.</li>
-            <li> Too many nuts which are all in nature you should Reduce as far as possible.</li>
-          </ul>
-        </li>
-      </ul>
+    <h4 style="color: #c0392b; margin-top: 20px;">Weaknesses</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>You must control your fire, which if not balanced:
+        <ul style="padding-left: 20px; margin-top: 8px;">
+          <li>Physically you may start feeling acidity, rashes, acne on your skin, even have high blood pressure.</li>
+          <li>Mentally you may find yourself snapping at people in anger, losing patience over small things, wanting to control and dominate everyone around you—even your inner voice becomes harsh, overly critical of yourself and others.</li>
+        </ul>
+      </li>
+    </ul>
 
-      </div>`;
+    <h4 style="color: #c0392b; margin-top: 20px;">Does</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>Your best friend is the cool—to keep the inner fire in check.</li>
+      <li>You need to load up on foods and drinks that are cooling and hydrating in nature.
+        <ul style="padding-left: 20px; margin-top: 8px;">
+          <li>Like melons, apples, beets, coconut, cherries.</li>
+          <li>Like cooling vegetables such as cucumbers, ash gourd, ridge gourd.</li>
+          <li>Sip on coconut water.</li>
+        </ul>
+      </li>
+      <li>And if you want to have teas, make them cooling—herbs like mint, fennel, rose petals.</li>
+    </ul>
+
+    <h4 style="color: #c0392b; margin-top: 20px;">Donts</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>Ironically, what you will crave the most will be spicy food—with lots of masala—which will completely put your Pitta out of balance.
+        <ul style="padding-left: 20px; margin-top: 8px;">
+          <li>No spicy curries, spicy masalas, oily foods, pickles.</li>
+          <li>Too many nuts, which are oily in nature—you should reduce as far as possible.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+`;
+
 
       const kapha = `<div class="kapha">
         <h2>Kapha Dosha</h2>
@@ -193,10 +196,12 @@ const questions = Array.from({length: 15}, (_, i) => ({
     }));
 
     let currentQuestionIndex = 0;
+    const userName = document.getElementById('username').value.trim();
+
 
     function startTest() {
-      const name = document.getElementById('username').value.trim();
-      if (!name) return alert("Please enter your name.");
+      if (!userName) return alert("Please enter your name.");
+      document.getElementById("hi-user").innerHTML=`<strong>Hi ${userName}</strong>`;
       document.getElementById('homePage').style.display = "none";
       document.getElementById('testPage').style.display = "block";
       loadQuestion();
@@ -289,13 +294,31 @@ const questions = Array.from({length: 15}, (_, i) => ({
       });
 
       document.getElementById("testPage").style.display = "none";
-      document.getElementById("resultPage").style.display = "block";
       
-      
+      showResults(countA, countB, countC);
 
     } else{
         return;
     }
+    }
+
+
+    function showResults(countA, countB, countC){
+      const resultPage = document.getElementById("resultPage");
+      resultPage.style.display = "block";
+
+        if(countA >= 10){
+          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>VATA DOSHA</strong> body type.`;
+          resultPage.innerHTML += vata;
+        } else if(countB >= 10){
+          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>PITTA DOSHA</strong> body type.`;
+          resultPage.innerHTML += pitta;
+
+        } else if(countC >= 10){
+          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>KAPHA DOSHA</strong> body type.`;
+          resultPage.innerHTML += kapha;
+
+        }
     }
 
     function selectOption(index) {
