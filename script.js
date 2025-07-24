@@ -122,12 +122,18 @@ const questions = Array.from({length: 15}, (_, i) => ({
       if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         loadQuestion();
+      } else if(currentQuestionIndex == 14){
+        currentQuestionIndex = 0;
+        loadQuestion();
       }
     }
 
     function prevQuestion() {
       if (currentQuestionIndex > 0) {
         currentQuestionIndex--;
+        loadQuestion();
+      } else if(currentQuestionIndex == 0){
+        currentQuestionIndex = 14;
         loadQuestion();
       }
     }
@@ -137,6 +143,8 @@ const questions = Array.from({length: 15}, (_, i) => ({
         alert("Please answer all questions before submitting.");
         return;
       }
+
+       if( confirm("Do you wish to submit the Quiz?")){
 
       let countA = 0, countB = 0, countC = 0;
       questions.forEach(q => {
@@ -149,6 +157,9 @@ const questions = Array.from({length: 15}, (_, i) => ({
       document.getElementById("resultPage").style.display = "block";
       document.getElementById("resultSummary").textContent = `You selected:
         A: ${countA}, B: ${countB}, C: ${countC}`;
+    } else{
+        return;
+    }
     }
 
     function selectOption(index) {
