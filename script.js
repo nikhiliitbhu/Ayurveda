@@ -54,52 +54,53 @@ const images = [
 ];
 
 
-const vata = `<div class="vata">
-    <h2>Vata Dosha</h2>
-    <h4>Strengths</h4>
-    <ul>
-      <li> Vata is the energy of wind and space and just like the wind you are full of movement, lightness and change.</li>
-      <li> Just like the wind cools wherever it lands on and rises wherever it touches similarly your nature to is cool and dry.</li>
+const vata = `
+  <div class="vata" style="max-width: 700px; margin: 20px auto; background-color: #EBFFD8; border: 2px solid #a0d8ef; border-radius: 12px; padding: 24px; font-family: 'Segoe UI', sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); color: #1f3b4d;">
+    <h2 style="color: #0077b6; text-align: center; margin-bottom: 20px;">Vata Dosha</h2>
+
+    <h4 style="color: #005f73; margin-top: 20px;">Strengths</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
       <li>Vata is the energy of wind and space and just like the wind you are full of movement, lightness and change.</li>
-      <li>Just like the wind cools wherever it lands on and rises wherever it touches similarly your nature to is cool and dry.</li>
-      <li> Your body being light is also very quick and agile.</li>
-      <li>You move fast, you speak fast. Sometimes even faster than the world can keep up. And it's not just your body, your mind also. Things happen fast. That's why it's so easy for you to learn something very Quickly</li>
+      <li>Just like the wind cools wherever it lands on and rises wherever it touches similarly your nature too is cool and dry.</li>
+      <li>Your body being light is also very quick and agile.</li>
+      <li>You move fast, you speak fast. Sometimes even faster than the world can keep up. And it's not just your body, your mind also. Things happen fast. That's why it's so easy for you to learn something very quickly.</li>
       <li>You can shift from one idea to the next. Effortlessly. Which makes you quite able. You can thrive in new environments, new roles, new situations. Among all the three body types.</li>
-      <li>What are also the most drawn toward higher states of awareness, to spirituality, philosophy, and deep introspection.</li>
+      <li>Vatas are also the most drawn toward higher states of awareness, to spirituality, philosophy, and deep introspection.</li>
     </ul>
 
-    <h4>Weaknesses</h4>
-    <ul>
+    <h4 style="color: #005f73; margin-top: 20px;">Weaknesses</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
       <li>You easily feel cold, and your skin gets dry if you don't take care of it.</li>
       <li>Sometimes mentally agile for others to understand you.</li>
-      <li>money, you don't usually hold on. You love spending it as fast as you earn it.</li>
+      <li>Money—you don't usually hold on. You love spending it as fast as you earn it.</li>
       <li>Physically, you may become overly thin, struggling to gain weight.</li>
-      <li> No Matter what you do. Mentally your mind can start racing too much. Hopping from one thought to the other. Erratic indecisive, changing quickly. You may become fizzy, even restless, unable to sit still.</li>
+      <li>No matter what you do, mentally your mind can start racing too much—hopping from one thought to the other. Erratic, indecisive, changing quickly. You may become fizzy, even restless, unable to sit still.</li>
     </ul>
 
-    <h4>Does</h4>
-    <ul>
-      <li>To keep your Vata in control, you need elements opposite of yours, which are Water and Earth and these are grounding and nourishing.</li>
-      <li>Your best friend is snehana. Which means oiling both inside and outside.
-        <ul>
-          <li> Outside by regularly oiling your self through self massage. </li>
-          <li> Inside by eating foods which naturally have more oil in them. Like nuts and fats. </li>
+    <h4 style="color: #005f73; margin-top: 20px;">Does</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>To keep your Vata in control, you need elements opposite of yours, which are Water and Earth—and these are grounding and nourishing.</li>
+      <li>Your best friend is <strong>snehana</strong>, which means oiling both inside and outside.
+        <ul style="padding-left: 20px; margin-top: 8px;">
+          <li>Outside, by regularly oiling yourself through self-massage.</li>
+          <li>Inside, by eating foods which naturally have more oil in them—like nuts and fats.</li>
         </ul>
       </li>
-      <li> And You need food that is grounding lubricating and slightly Intense and heavy.
-        <ul>
-          <li> Vegetables like pumpkin, sweet potatoes.</li>
+      <li>And you need food that is grounding, lubricating, and slightly intense and heavy.
+        <ul style="padding-left: 20px; margin-top: 8px;">
+          <li>Vegetables like pumpkin, sweet potatoes.</li>
         </ul>
       </li>
-      <li>Yoga is the best recreation for you. Slow and Steady Exercises.</li>
+      <li>Yoga is the best recreation for you—slow and steady exercises.</li>
     </ul>
 
-    <h4>Donts</h4>
-    <ul>
-    <li>If you only eat light salads and dry snacks it will only aggravate your weight further.</li>
-    <li> When it comes to movement avoid super intense cardio.  And Instead choose yoga slow strength training practices that help you build.</li>
-      </ul>
-  </div>`;
+    <h4 style="color: #005f73; margin-top: 20px;">Donts</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>If you only eat light salads and dry snacks, it will only aggravate your weight further.</li>
+      <li>When it comes to movement, avoid super intense cardio. Instead, choose yoga and slow strength-training practices that help you build.</li>
+    </ul>
+  </div>
+`;
 
   
   const pitta = `
@@ -151,41 +152,44 @@ const vata = `<div class="vata">
 `;
 
 
-      const kapha = `<div class="kapha">
-        <h2>Kapha Dosha</h2>
+     const kapha = `
+  <div class="kapha" style="max-width: 700px; margin: 20px auto; background-color: beige; border: 2px solid #b2d8b2; border-radius: 12px; padding: 24px; font-family: 'Segoe UI', sans-serif; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); color: #2e4d1f;">
+    <h2 style="color: #38761d; text-align: center; margin-bottom: 20px;">Kapha Dosha</h2>
 
-        <h4>Strengths</h4>
-        <ul>
-          <li> You are like the earth. Stable, calm, deeply grounded.</li>
-          <li>Physically, you are likely to have a strong, well-built frame, big expressiveness, thick lashes, lust, beautiful hair.</li>
-          <li> You radiate a certain softness. A warmth which makes people around you feel very safe.</li>
-          <li>You might think a lot before starting something new. But when you commit you go all in. And you make sure it's done.</li>
-          <li>Doing things slightly slow. But very slowly is actually a superpower. In a world that's always racing you. Rarely make impulsive decisions. You really think everything through.</li>
-          <li> You have the memory of an elephant. Once you learn something you remember it for a long time unlike a person who learns fast and forgets fast.</li>
-        </ul>
+    <h4 style="color: #2d6a4f; margin-top: 20px;">Strengths</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>You are like the earth — stable, calm, deeply grounded.</li>
+      <li>Physically, you are likely to have a strong, well-built frame, expressive features, thick lashes, lustrous hair.</li>
+      <li>You radiate a certain softness — a warmth which makes people around you feel very safe.</li>
+      <li>You might think a lot before starting something new. But when you commit, you go all in. And you make sure it's done.</li>
+      <li>Doing things slightly slow — but very surely — is actually a superpower. In a world that's always racing, you rarely make impulsive decisions. You really think everything through.</li>
+      <li>You have the memory of an elephant. Once you learn something, you remember it for a long time — unlike a person who learns fast and forgets fast.</li>
+    </ul>
 
-        <h4>Weaknesses</h4>
-        <ul>
-          <li> If your Kapha increases too much. You gain weight too fast.</li>
-          <li>Your digestion becomes slow and sluggish.</li>
-          <li> And after meals you feel like sinking into a comfortable sofa.</li>
-        </ul>
+    <h4 style="color: #2d6a4f; margin-top: 20px;">Weaknesses</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>If your Kapha increases too much, you gain weight too fast.</li>
+      <li>Your digestion becomes slow and sluggish.</li>
+      <li>And after meals, you feel like sinking into a comfortable sofa.</li>
+    </ul>
 
-        <h4>Does</h4>
-        <ul>
-          <li>The most important advice for you is don't get stuck in stillness. Neither physically nor mentally. Movement is your best medicine.</li>
-          <li>Really heavy exercises.</li>
-          <li>Eat Fruits like pineapple, papaya, apples, oranges, berries</li>
-          <li>Consume  water rich vegetables like bottle gourd, rich gourds, zucchini over sweet dense ones.</li>
-          <li> Unlike for pittas, spices are actually good for you. They help cut the kapha. So you can generally use spices like, ginger, black pepper, turmeric, mustard seeds, cinnamon, cardamom, cloves, green chillies and pepper in your meals.</li>
-        </ul>
+    <h4 style="color: #2d6a4f; margin-top: 20px;">Does</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>The most important advice for you: don't get stuck in stillness — neither physically nor mentally. Movement is your best medicine.</li>
+      <li>Do really heavy exercises.</li>
+      <li>Eat fruits like pineapple, papaya, apples, oranges, berries.</li>
+      <li>Consume water-rich vegetables like bottle gourd, ridge gourd, zucchini over sweet dense ones.</li>
+      <li>Unlike for Pittas, spices are actually good for you — they help cut Kapha. So you can generally use spices like ginger, black pepper, turmeric, mustard seeds, cinnamon, cardamom, cloves, green chillies, and pepper in your meals.</li>
+    </ul>
 
-        <h4>Donts</h4>
-        <ul>
-          <li>Simple stretches will not cut it for you. You need intensity. You need to squat. You need to run, jump, dance, sprint, whatever gets your heart pumping faster. Among all the body types you need activity the most.</li>
-          <li> Also you will be the most drawn to heavy dense comfort foods, chocolates, pastries, nuts, butter, cheese, rich grain based dishes. But those are your worst Enemies.</li>
-        </ul>
-      </div>`
+    <h4 style="color: #2d6a4f; margin-top: 20px;">Donts</h4>
+    <ul style="padding-left: 20px; line-height: 1.6;">
+      <li>Simple stretches will not cut it for you. You need intensity. You need to squat, run, jump, dance, sprint — whatever gets your heart pumping faster. Among all the body types, you need activity the most.</li>
+      <li>Also, you will be the most drawn to heavy dense comfort foods — chocolates, pastries, nuts, butter, cheese, rich grain-based dishes. But those are your worst enemies.</li>
+    </ul>
+  </div>
+`;
+
 
 const questions = Array.from({length: 15}, (_, i) => ({
       text: (i+1) + ". " + questionPaper[i],
@@ -306,18 +310,49 @@ const questions = Array.from({length: 15}, (_, i) => ({
     function showResults(countA, countB, countC){
       const resultPage = document.getElementById("resultPage");
       resultPage.style.display = "block";
-
-        if(countA >= 10){
-          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>VATA DOSHA</strong> body type.`;
+      const largest = (countA > countB)? ((countA > countC)?'A':'C') : ((countB>countC)?'B':'C');
+        if(countA >= 9){
+          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>VATA DOSHA</strong> body type(${Math.round(countA*100/(countA+countB+countC))}%)`;
           resultPage.innerHTML += vata;
-        } else if(countB >= 10){
-          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>PITTA DOSHA</strong> body type.`;
+        } else if(countB >= 9){
+          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>PITTA DOSHA</strong> body type(${Math.round(countB*100/(countA+countB+countC))}%)`;
           resultPage.innerHTML += pitta;
 
-        } else if(countC >= 10){
-          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>KAPHA DOSHA</strong> body type.`;
+        } else if(countC >= 9){
+          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>KAPHA DOSHA</strong> body type(${Math.round(countC*100/(countA+countB+countC))}%)`;
           resultPage.innerHTML += kapha;
+        }
+        else if(countA == 5 && countB == 5 && countC == 5){
+          resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have all the tridoshas in equal quantities, This is really really rate. <br> Take the quiz again if you wish.`;
+          resultPage.innerHTML += vata + pitta + kapha;
+        } else if(countA == countB){
+            resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have equal Vata and Pitta Dosh(${Math.round(countA*100/(countA+countB+countC))}% each)`;
+          resultPage.innerHTML += vata + pitta;
+        } else if(countB == countC){
+            resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have equal Pitta and Kapha Dosh(${Math.round(countB*100/(countA+countB+countC))}% each)`;
+          resultPage.innerHTML +=  pitta + kapha;
+        } else if(countA == countC){
+               resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You have equal Vata and Kapha Dosh(${Math.round(countA*100/(countA+countB+countC))}% each)`;
+          resultPage.innerHTML += vata + pitta ;
+        } else {
+          switch(largest){
+            case 'A': 
+                  resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>VATA DOSHA</strong> body type(${Math.round(countA*100/(countA+countB+countC))}%)`;
+          resultPage.innerHTML += vata;
+                  break;
 
+            case 'B':
+                  resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>PITTA DOSHA</strong> body type(${Math.round(countB*100/(countA+countB+countC))}%)`;
+                 resultPage.innerHTML += pitta;
+          resultPage.innerHTML += pitta;
+
+                 break;
+            
+            case 'C':
+              resultPage.innerHTML += `<h1 style='text-align: center'>Hey ${userName}, You are primarily <strong>KAPHA DOSHA</strong> body type(${Math.round(countC*100/(countA+countB+countC))}%)`;
+              resultPage.innerHTML += kapha;
+              break;
+          }
         }
     }
 
