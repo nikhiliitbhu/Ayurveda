@@ -119,6 +119,10 @@ const questions = Array.from({length: 15}, (_, i) => ({
     }
 
     function nextQuestion() {
+      if (!questions.some(q => q.selected === null)){
+        confirm("You have answered all the questions, would you like to submit the quiz??") ? submitTest()  : "";
+      }
+
       if (currentQuestionIndex < questions.length - 1) {
         currentQuestionIndex++;
         loadQuestion();
