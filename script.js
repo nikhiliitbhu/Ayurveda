@@ -174,3 +174,11 @@ function updateSidebarButton(index) {
     button.classList.add('visited-not-answered'); // Red
   }
 }
+
+const btn = document.getElementById('toggleBtn');
+const box = document.getElementById('infoBox');
+
+btn.addEventListener('click', () => {
+  box.classList.toggle('show');
+});
+
