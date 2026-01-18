@@ -204,6 +204,7 @@ const questions = Array.from({length: 15}, (_, i) => ({
 
 
     function startTest() {
+    const userName = document.getElementById('username').value.trim();
       if (!userName) return alert("Please enter your name.");
       document.getElementById("hi-user").innerHTML=`<strong>Hi ${userName}</strong>`;
       document.getElementById('homePage').style.display = "none";
