@@ -346,3 +346,15 @@
       transform: scale(1.1);
       transform: brightness(1.1);
     }
+
+    #dosha-card{
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+    }
+
+    @media (max-width: 1200px) {
+      #dosha-card{
+        flex-direction: column;
+      }
+    }
